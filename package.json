@@ -1,0 +1,43 @@
+{
+  "name": "upstar_music",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf build",
+    "start": "webpack-dev-server --inline --hot",
+    "build": "NODE_ENV=production npm run clean && webpack -p",
+    "prod":"npm run build && surge -p build"
+  },
+  "repository": "https://github.com/StephenGrider/WebpackProject",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "faker": "^3.1.0",
+    "lodash": "^4.17.2",
+    "react": "15.4.1",
+    "react-dom": "15.4.1",
+    "react-input-range": "^0.9.2",
+    "react-redux": "^4.4.6",
+    "react-router": "^3.0.0",
+    "redux": "^3.6.0",
+    "redux-form": "^6.3.2",
+    "redux-thunk": "^2.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.44",
+    "@babel/preset-env": "^7.0.0-beta.44",
+    "@babel/preset-react": "^7.0.0-beta.44",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^0.26.4",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.8.3",
+    "rimraf": "^2.6.2",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.13.2",
+    "webpack": "^4.5.0",
+    "webpack-cli": "^2.0.14",
+    "webpack-dev-server": "^3.1.3"
+  }
+}
